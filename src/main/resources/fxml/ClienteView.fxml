@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <tabs>
+          <Tab text="Matemáticas">
+            <content>
+              <AnchorPane maxHeight="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefWidth="603.0">
+                     <children>
+                        <GridPane hgap="4.0" layoutX="130.0" layoutY="40.0" vgap="5.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="-Infinity" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Suma" />
+                              <Label text="Resta" GridPane.rowIndex="1" />
+                              <Label text="Multiplicación" GridPane.rowIndex="2" />
+                              <Label text="División" GridPane.rowIndex="3" />
+                              <Label text="Raíz" GridPane.rowIndex="4" />
+                              <Label text="Potencia" GridPane.rowIndex="5" />
+                              <Label text="Logarítmo" GridPane.rowIndex="6" />
+                              <Label text="Seno" GridPane.rowIndex="7" />
+                              <Label text="Coseno" GridPane.rowIndex="8" />
+                              <Label text="Tangente:" GridPane.rowIndex="9" />
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+                                 <children>
+                                    <TextField fx:id="txtSumA" maxWidth="40.0" />
+                                    <Label alignment="CENTER" prefWidth="24.0" text="+" />
+                                    <TextField fx:id="txtSumB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtSumResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="txtRestA" maxWidth="40.0" />
+                                    <Label alignment="CENTER" prefWidth="24.0" text="-" />
+                                    <TextField fx:id="tztRestB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txrRestResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField fx:id="txtMultA" maxWidth="40.0" />
+                                    <Label alignment="CENTER" prefWidth="24.0" text="x" />
+                                    <TextField fx:id="txtMultB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtMultResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="txtDivA" maxWidth="40.0" />
+                                    <Label alignment="CENTER" prefWidth="24.0" text="/" />
+                                    <TextField fx:id="txtDivB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtDivResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="txtRaizA" maxWidth="40.0" />
+                                    <Label alignment="CENTER" prefWidth="24.0" text="√" />
+                                    <TextField fx:id="txtRaizB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtRaizResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <TextField fx:id="txtPotA" maxWidth="40.0" />
+                                    <Label alignment="CENTER" prefWidth="24.0" text="^" />
+                                    <TextField fx:id="txtPotB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtPotResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <children>
+                                    <TextField fx:id="txtLogA" maxWidth="40.0" />
+                                    <Label prefWidth="24.0" text="LOG" />
+                                    <TextField fx:id="txtLogB" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtLogResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <children>
+                                    <Label text="SIN" />
+                                    <TextField fx:id="txtSINA" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtSINResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <children>
+                                    <Label text="COS" />
+                                    <TextField fx:id="txtCOSA" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtCOSResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <children>
+                                    <Label text="TAG" />
+                                    <TextField fx:id="txtTAGA" maxWidth="40.0" />
+                                    <Label text="=" />
+                                    <TextField fx:id="txtTAGResult" maxWidth="40.0" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="btnCalcMult" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Button fx:id="btnCalcResta" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Button fx:id="btnCalcSuma" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" />
+                              <Button fx:id="btnCalcDiv" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Button fx:id="btnCalcRaiz" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Button fx:id="btnCalcPot" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Button fx:id="btnCalcLog" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <Button fx:id="btnCalcSIN" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                              <Button fx:id="bcnCalcCOS" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <Button fx:id="btnCalcTAG" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Información del servidor">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane hgap="4.0" layoutX="150.0" layoutY="37.0" prefHeight="350.0" prefWidth="300.0" vgap="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="-Infinity" prefWidth="72.0" />
+                              <ColumnConstraints hgrow="NEVER" maxWidth="137.0" minWidth="10.0" prefWidth="137.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Hora" />
+                              <Label text="Fecha" GridPane.rowIndex="1" />
+                              <Label text="Equipo" GridPane.rowIndex="2" />
+                              <Label text="S.O" GridPane.rowIndex="3" />
+                              <Label text="Usuario" GridPane.rowIndex="4" />
+                              <Label text="Versión java" GridPane.rowIndex="5" />
+                              <Label text="Procesador" GridPane.rowIndex="6" />
+                              <Label text="Ram total" GridPane.rowIndex="7" />
+                              <Label text="Disco total" GridPane.rowIndex="8" />
+                              <Button fx:id="btnEquipo" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Button fx:id="btnFecha" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Button fx:id="btnHora" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" />
+                              <Button fx:id="btnSO" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Button fx:id="btnUser" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Button fx:id="btnJava" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Button fx:id="btnProc" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <Button fx:id="btnRamTotal" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                              <Button fx:id="btnDiscoTotal" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                              <TextField fx:id="txtHora" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtFecha" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtEquipo" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtSO" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtUsuario" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txtJava" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="txtProcesador" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField fx:id="txtRam" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextField fx:id="txtDiscoTotal" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <Label text="Disco libre" GridPane.rowIndex="9" />
+                              <TextField fx:id="txtDiscoLibre" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                              <Button fx:id="btnDiscoLibre" mnemonicParsing="false" text="Calcular" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Avanzado">
+               <content>
+                  <AnchorPane fx:id="anchorAvanzado" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="14.0">
+                           <children>
+                              <ImageView fx:id="image" fitHeight="421.0" fitWidth="506.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="534.0" layoutY="142.0" prefHeight="168.0" prefWidth="58.0" spacing="10.0" AnchorPane.bottomAnchor="139.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="142.0">
+                           <children>
+                              <Button fx:id="btnFoto" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="PT" />
+                              <Button fx:id="btnCaptura" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="SCR" />
+                              <Button fx:id="btnPDF" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="DOC" />
+                              <Button fx:id="btnPlay" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="P" />
+                              <Button fx:id="btnStop" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" text="STOP" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
