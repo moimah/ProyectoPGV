@@ -224,10 +224,10 @@
                         </VBox>
                         <VBox layoutX="534.0" layoutY="142.0" prefHeight="168.0" prefWidth="58.0" spacing="10.0" AnchorPane.bottomAnchor="139.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="142.0">
                            <children>
-                              <Button fx:id="btnFoto" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="PT" />
-                              <Button fx:id="btnCaptura" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="SCR" />
-                              <Button fx:id="btnPDF" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="DOC" />
-                              <Button fx:id="btnPlay" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="P" />
+                              <Button fx:id="btnFoto" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Foto" />
+                              <Button fx:id="btnCaptura" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Captura" />
+                              <Button fx:id="btnPDF" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="PDF" />
+                              <Button fx:id="btnPlay" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="PLAY" />
                               <Button fx:id="btnStop" mnemonicParsing="false" prefHeight="32.0" prefWidth="58.0" text="STOP" />
                            </children>
                         </VBox>

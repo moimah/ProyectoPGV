@@ -17,7 +17,7 @@ public class App extends Application {
 		Scene escena = new Scene(controller.getRoot());
 		
 		primaryStage.setScene(escena);
-		primaryStage.setTitle("JavaFX Template Project Demo");
+		primaryStage.setTitle("PoryectoPGV");
 		primaryStage.show();
 	}
 

@@ -16,9 +16,10 @@ public class Cliente {
 		
 		System.out.println("Creando socket cliente");
 
+		String kevin = "10.1.2.129";
 		InetAddress ip = InetAddress.getLocalHost();
 		int port = 4444;
-
+		
 		//Abir conexión
 		 socket = new Socket(ip, port);
 
@@ -178,6 +179,8 @@ public class Cliente {
 	
 	public static String SIN(double a) throws Exception {
 
+		open();
+		
 		Magic magic = new Magic(8, a, 0);
 		objectOutputStream.writeObject(magic);
 
@@ -187,6 +190,8 @@ public class Cliente {
 		objectOutputStream.close();
 
 		System.out.println(dato);
+		
+		socket.close();
 
 		return dato;
 

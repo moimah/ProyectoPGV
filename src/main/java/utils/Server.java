@@ -75,7 +75,7 @@ public class Server extends Thread {
 
 			case 5:
 
-				//TODO RAIZ
+				response = raiz(a, b);
 				
 				break;
 
@@ -87,25 +87,26 @@ public class Server extends Thread {
 
 			case 7:
 
-				//TODO logaritmo
+				response = logaritmo(a, b);		
 				
 				break;
 
 			case 8:
 				
-				//TODO SIN
-
+				response = sin(a);
+				
 				break;
 
 			case 9:
 				
-				//TODO COS
+				response = cos(a);
 
 				break;
 
 			case 10:
 
-				//TODO TAG
+				response = tan(a);
+				
 				break;
 				
 			case 11:
@@ -318,6 +319,27 @@ public class Server extends Thread {
 		return "" + ((double) Math.pow(a, b));
 	}
 	
+	public static String raiz(double a, double b) {
+		return "" + (Math.pow(a, 1.0/b));
+	}
+	
+	public static String logaritmo(double a, double b) {
+		return "" + (Math.log10(a)/Math.log10(b));
+	}
+	
+	public static String sin(double a) {
+		return "50"+(Math.sin(a)) ;
+	}
+	
+	public static String cos(double a) {
+		return "" + Math.cos(a);
+	}
+	
+	public static String tan(double a) {
+		return "" + Math.tan(a);
+	}
+	
+	
 	
 	public static String computerName() {
 		
@@ -368,7 +390,7 @@ public class Server extends Thread {
 		return "" + space + "mb";
 	}
 	
-	
+
 	
 	
 

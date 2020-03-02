@@ -368,6 +368,8 @@ public class ClienteController implements Initializable {
 
 		case 8:
 
+			System.out.println("PULSANDO");
+			
 			try {
 
 				Double a = Double.parseDouble(txtSINA.getText());
